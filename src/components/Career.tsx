@@ -54,7 +54,7 @@ const Career: React.FC = () => {
   ];
 
   return (
-    <div className="min-h-screen pt-20">
+    <div className="min-h-screen pt-4">
       {/* Hero Section */}
       <section className="relative py-20 bg-gradient-to-b from-gray-900 to-primary-900">
         <div className="absolute inset-0 bg-grid-white/[0.05] bg-[size:16px_16px]" />
