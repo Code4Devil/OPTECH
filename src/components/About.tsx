@@ -60,7 +60,7 @@ const About: React.FC = () => {
             transition={{ duration: 0.5 }}
           >
             <span className="inline-block py-1 px-3 rounded-full bg-primary-100 text-primary-800 text-sm font-medium mb-4">
-              About Optrya
+              About Optrya Technologies
             </span>
             <h2 className="text-3xl md:text-4xl font-display font-bold text-gray-900 mb-6">
               We Deliver Excellence in Every IT Solution
@@ -116,7 +116,7 @@ const About: React.FC = () => {
             >
               <div className="p-8">
                 <h3 className="text-2xl font-bold text-gray-900 mb-6">
-                  Why Choose Optrya?
+                  Why Choose Optrya Technologies?
                 </h3>
 
                 <div className="grid grid-cols-1 gap-6">

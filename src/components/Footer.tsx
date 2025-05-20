@@ -38,14 +38,14 @@ const Footer: React.FC = () => {
               </div>
               <div>
                 <h2 className="text-xl sm:text-2xl font-display font-bold bg-gradient-to-r from-primary-400 to-secondary-400 bg-clip-text text-transparent">
-                  Optrya
+                  Optrya Technologies
                 </h2>
-                <p className="text-xs tracking-wider -mt-1 text-gray-400">TECHNOLOGIES</p>
+                <p className="text-xs tracking-wider -mt-1 text-gray-400">IT SERVICES & SOLUTIONS</p>
               </div>
             </div>
 
             <p className="text-sm sm:text-base text-gray-400 mb-4 sm:mb-6">
-              Empowering businesses through innovative IT solutions and cutting-edge technology.
+              Optrya Technologies - Empowering businesses through innovative IT solutions and cutting-edge technology services since 2023.
             </p>
 
             <div className="space-y-3 sm:space-y-4">
@@ -55,7 +55,7 @@ const Footer: React.FC = () => {
                   info@optrya.com
                 </a>
               </div>
-             
+
               <div className="flex items-start">
                 <MapPin className="h-5 w-5 text-primary-400 mr-2 sm:mr-3 mt-0.5" />
                 <span className="text-sm sm:text-base text-gray-300">
@@ -124,7 +124,7 @@ const Footer: React.FC = () => {
               </div>
             </form>
 
-           
+
           </div>
         </div>
 
