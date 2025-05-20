@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="800px" height="600px" viewBox="0 0 800 600" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>Optrya Technologies</title>
+    <defs>
+        <linearGradient x1="0%" y1="0%" x2="100%" y2="100%" id="linearGradient-1">
+            <stop stop-color="#4F46E5" offset="0%"></stop>
+            <stop stop-color="#7C3AED" offset="100%"></stop>
+        </linearGradient>
+        <linearGradient x1="100%" y1="0%" x2="0%" y2="100%" id="linearGradient-2">
+            <stop stop-color="#4F46E5" offset="0%"></stop>
+            <stop stop-color="#7C3AED" offset="100%"></stop>
+        </linearGradient>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <rect fill="#1E293B" x="0" y="0" width="800" height="600"></rect>
+        <g id="Background" transform="translate(50.000000, 50.000000)">
+            <circle id="Circle1" fill="url(#linearGradient-1)" opacity="0.2" cx="100" cy="100" r="100"></circle>
+            <circle id="Circle2" fill="url(#linearGradient-2)" opacity="0.2" cx="600" cy="400" r="100"></circle>
+            <circle id="Circle3" fill="#4F46E5" opacity="0.1" cx="350" cy="250" r="200"></circle>
+        </g>
+        <g id="Logo" transform="translate(250.000000, 200.000000)">
+            <circle id="Circle" fill="url(#linearGradient-1)" cx="150" cy="100" r="80"></circle>
+            <path d="M150,40 C183.137,40 210,66.8629 210,100 C210,133.137 183.137,160 150,160 C116.863,160 90,133.137 90,100 C90,66.8629 116.863,40 150,40 Z M150,60 C127.909,60 110,77.9086 110,100 C110,122.091 127.909,140 150,140 C172.091,140 190,122.091 190,100 C190,77.9086 172.091,60 150,60 Z" id="Ring" fill="#FFFFFF"></path>
+            <path d="M150,70 C166.569,70 180,83.4315 180,100 C180,116.569 166.569,130 150,130 C133.431,130 120,116.569 120,100 C120,83.4315 133.431,70 150,70 Z" id="Inner-Circle" fill="#FFFFFF"></path>
+            <path d="M150,85 C158.284,85 165,91.7157 165,100 C165,108.284 158.284,115 150,115 C141.716,115 135,108.284 135,100 C135,91.7157 141.716,85 150,85 Z" id="Core" fill="#1E293B"></path>
+        </g>
+        <text id="OPTRYA" font-family="Arial-BoldMT, Arial" font-size="48" font-weight="bold" fill="#FFFFFF">
+            <tspan x="275" y="350">OPTRYA</tspan>
+        </text>
+        <text id="TECHNOLOGIES" font-family="Arial-BoldMT, Arial" font-size="24" font-weight="bold" fill="#FFFFFF" opacity="0.8">
+            <tspan x="290" y="380">TECHNOLOGIES</tspan>
+        </text>
+        <text id="IT-Solutions-Provider" font-family="ArialMT, Arial" font-size="18" font-weight="normal" fill="#FFFFFF" opacity="0.6">
+            <tspan x="300" y="420">IT Solutions Provider</tspan>
+        </text>
+    </g>
+</svg>

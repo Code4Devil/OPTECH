@@ -167,12 +167,12 @@ const Logo: React.FC<{ isScrolled: boolean }> = ({ isScrolled }) => (
           ? 'bg-gradient-to-r from-primary-600 to-secondary-500 bg-clip-text text-transparent'
           : 'text-white'
       }`}>
-        Optrya
+        Optrya Technologies
       </h1>
       <p className={`text-xs tracking-wider -mt-1 ${
         isScrolled ? 'text-gray-600' : 'text-gray-300'
       }`}>
-        TECHNOLOGIES
+        IT SERVICES & SOLUTIONS
       </p>
     </div>
   </div>

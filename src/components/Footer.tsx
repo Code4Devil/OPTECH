@@ -1,30 +1,31 @@
 import React from 'react';
 import { motion } from 'framer-motion';
-import { Facebook, Twitter, Linkedin, Instagram, Mail, Phone, MapPin, ArrowRight, Globe, Send } from 'lucide-react';
+import { Facebook, Twitter, Linkedin, Instagram, Mail, MapPin, ArrowRight, Globe, Send } from 'lucide-react';
+import { Link } from 'react-router-dom';
 
 const Footer: React.FC = () => {
   const quickLinks = [
-    { name: 'Home', href: '#hero' },
-    { name: 'About Us', href: '#about' },
-    { name: 'Services', href: '#services' },
-    { name: 'Testimonials', href: '#testimonials' },
-    { name: 'Contact', href: '#contact' },
+    { name: 'Home', href: '/' },
+    { name: 'About Us', href: '/about' },
+    { name: 'Services', href: '/services' },
+    { name: 'Career', href: '/career' },
+    { name: 'Contact', href: '/contact' },
   ];
 
   const services = [
-    { name: 'Custom Software Development', href: '#' },
-    { name: 'Cloud Infrastructure', href: '#' },
-    { name: 'Data Analytics', href: '#' },
-    { name: 'Cybersecurity', href: '#' },
-    { name: 'Web Development', href: '#' },
-    { name: 'AI & Machine Learning', href: '#' },
+    { name: 'Custom Software Development', href: '/services/custom-software' },
+    { name: 'Cloud Solutions', href: '/services/cloud-solutions' },
+    { name: 'Data Analytics & AI', href: '/services/data-analytics' },
+    { name: 'Cybersecurity', href: '/services/cybersecurity' },
+    { name: 'IT Infrastructure', href: '/services/it-infrastructure' },
+    { name: 'Mobile Development', href: '/services/mobile-development' },
   ];
 
   const socialLinks = [
-    { icon: <Facebook size={18} />, href: '#', label: 'Facebook' },
-    { icon: <Twitter size={18} />, href: '#', label: 'Twitter' },
-    { icon: <Linkedin size={18} />, href: '#', label: 'LinkedIn' },
-    { icon: <Instagram size={18} />, href: '#', label: 'Instagram' },
+    { icon: <Facebook size={18} />, href: 'https://facebook.com/optryatech', label: 'Facebook' },
+    { icon: <Twitter size={18} />, href: 'https://twitter.com/optryatech', label: 'Twitter' },
+    { icon: <Linkedin size={18} />, href: 'https://linkedin.com/company/optrya-technologies', label: 'LinkedIn' },
+    { icon: <Instagram size={18} />, href: 'https://instagram.com/optryatech', label: 'Instagram' },
   ];
 
   return (
@@ -51,8 +52,8 @@ const Footer: React.FC = () => {
             <div className="space-y-3 sm:space-y-4">
               <div className="flex items-center">
                 <Mail className="h-5 w-5 text-primary-400 mr-2 sm:mr-3" />
-                <a href="mailto:info@optrya.com" className="text-sm sm:text-base text-gray-300 hover:text-white transition">
-                  info@optrya.com
+                <a href="mailto:info@optrya.in" className="text-sm sm:text-base text-gray-300 hover:text-white transition">
+                  info@optrya.in
                 </a>
               </div>
 
@@ -71,13 +72,13 @@ const Footer: React.FC = () => {
             <ul className="space-y-2 sm:space-y-3">
               {quickLinks.map((link) => (
                 <li key={link.name}>
-                  <a
-                    href={link.href}
+                  <Link
+                    to={link.href}
                     className="text-sm sm:text-base text-gray-400 hover:text-white transition flex items-center group"
                   >
                     <ArrowRight className="h-4 w-4 mr-2 opacity-0 group-hover:opacity-100 transform -translate-x-2 group-hover:translate-x-0 transition" />
                     {link.name}
-                  </a>
+                  </Link>
                 </li>
               ))}
             </ul>
@@ -88,13 +89,13 @@ const Footer: React.FC = () => {
             <ul className="space-y-2 sm:space-y-3">
               {services.map((service) => (
                 <li key={service.name}>
-                  <a
-                    href={service.href}
+                  <Link
+                    to={service.href}
                     className="text-sm sm:text-base text-gray-400 hover:text-white transition flex items-center group"
                   >
                     <ArrowRight className="h-4 w-4 mr-2 opacity-0 group-hover:opacity-100 transform -translate-x-2 group-hover:translate-x-0 transition" />
                     {service.name}
-                  </a>
+                  </Link>
                 </li>
               ))}
             </ul>
@@ -124,7 +125,7 @@ const Footer: React.FC = () => {
               </div>
             </form>
 
-
+            
           </div>
         </div>
 

@@ -21,6 +21,89 @@ const BlogPage: React.FC = () => {
   const blogPosts: BlogPost[] = [
     {
       id: 1,
+      title: 'Optrya Technologies: Leading IT Solutions Provider',
+      excerpt: 'Learn about Optrya Technologies, a leading IT solutions provider offering custom software development, cloud infrastructure, data analytics, and more.',
+      content: `
+        <p>
+            In today's rapidly evolving digital landscape, businesses need reliable technology partners to stay competitive.
+            <strong>Optrya Technologies</strong> has emerged as a leading IT solutions provider, offering a comprehensive
+            suite of services designed to help businesses leverage technology for growth and innovation.
+        </p>
+
+        <h3>Who is Optrya Technologies?</h3>
+        <p>
+            Founded in 2013, <strong>Optrya Technologies</strong> began as a small team of passionate developers with a vision
+            to transform how businesses leverage technology. Over the years, we've grown into a comprehensive IT solutions
+            provider serving clients across multiple industries globally.
+        </p>
+        <p>
+            At <strong>Optrya Technologies</strong>, we believe that technology should be an enabler, not a barrier. Our team
+            of expert professionals works closely with clients to understand their unique challenges and develop tailored
+            solutions that drive real business results.
+        </p>
+
+        <h3>Our Core Services</h3>
+        <p>
+            <strong>Optrya Technologies</strong> offers a wide range of IT services and solutions, including:
+        </p>
+        <h4>Custom Software Development</h4>
+        <p>
+            Our team of experienced developers creates custom software solutions tailored to your specific business needs.
+            From web applications to enterprise software, we deliver high-quality, scalable solutions that help you achieve
+            your business objectives.
+        </p>
+
+        <h4>Cloud Infrastructure</h4>
+        <p>
+            <strong>Optrya Technologies</strong> helps businesses leverage the power of cloud computing to improve scalability,
+            reduce costs, and enhance security. Our cloud experts design, implement, and manage cloud infrastructure that aligns
+            with your business goals.
+        </p>
+
+        <h4>Data Analytics</h4>
+        <p>
+            Turn your data into actionable insights with <strong>Optrya Technologies</strong>' data analytics services. We help
+            you collect, process, and analyze data to make informed business decisions and gain a competitive edge.
+        </p>
+
+        <h4>Cybersecurity</h4>
+        <p>
+            Protect your business from cyber threats with <strong>Optrya Technologies</strong>' comprehensive cybersecurity
+            solutions. Our security experts implement robust security measures to safeguard your sensitive data and systems.
+        </p>
+
+        <h3>Why Choose Optrya Technologies?</h3>
+        <p>
+            When you partner with <strong>Optrya Technologies</strong>, you benefit from:
+        </p>
+        <ul>
+            <li><strong>Expertise:</strong> Our team of certified IT professionals brings years of industry experience to every project.</li>
+            <li><strong>Customization:</strong> We develop tailored solutions that address your specific business challenges.</li>
+            <li><strong>Innovation:</strong> We stay at the forefront of technology trends to deliver cutting-edge solutions.</li>
+            <li><strong>Support:</strong> We provide dedicated support and ongoing maintenance to ensure your systems run smoothly.</li>
+            <li><strong>Results:</strong> We focus on delivering measurable business outcomes that drive growth and efficiency.</li>
+        </ul>
+
+        <h3>Our Commitment to Excellence</h3>
+        <p>
+            At <strong>Optrya Technologies</strong>, we're committed to delivering excellence in everything we do. Our mission is
+            to empower businesses with innovative technology solutions that drive growth, efficiency, and competitive advantage
+            in an increasingly digital world.
+        </p>
+        <p>
+            We believe in building long-term partnerships with our clients, working collaboratively to achieve their goals and
+            overcome challenges. Our client-centric approach ensures that we deliver solutions that not only meet technical
+            requirements but also align with business objectives.
+        </p>
+      `,
+      author: 'Optrya Technologies Team',
+      date: 'May 20, 2023',
+      category: 'Company',
+      image: '/blog/optrya-technologies.svg',
+      readTime: '5 min read'
+    },
+    {
+      id: 6,
       title: 'The Future of Cloud Computing: Trends to Watch in 2023',
       excerpt: 'Explore the emerging trends in cloud computing that are set to transform businesses in the coming year.',
       content: `
@@ -85,7 +168,7 @@ const BlogPage: React.FC = () => {
       readTime: '6 min read'
     },
     {
-      id: 3,
+      id: 7,
       title: 'How AI is Transforming Software Development',
       excerpt: 'Discover how artificial intelligence is changing the way we build, test, and deploy software applications.',
       content: `
@@ -119,7 +202,7 @@ const BlogPage: React.FC = () => {
       readTime: '7 min read'
     },
     {
-      id: 4,
+      id: 8,
       title: 'Digital Transformation: A Roadmap for Success',
       excerpt: 'A comprehensive guide to navigating the challenges of digital transformation and achieving meaningful business outcomes.',
       content: `
@@ -156,7 +239,7 @@ const BlogPage: React.FC = () => {
       readTime: '8 min read'
     },
     {
-      id: 5,
+      id: 9,
       title: 'The Rise of Edge Computing in IoT Applications',
       excerpt: 'Explore how edge computing is enabling more powerful and responsive IoT solutions across industries.',
       content: `
@@ -224,7 +307,7 @@ const BlogPage: React.FC = () => {
                   animate={{ opacity: 1, y: 0 }}
                   transition={{ duration: 0.5 }}
                 >
-                  OPTRYA Tech Blog
+                  Optrya Technologies Blog
                 </motion.h1>
                 <motion.p
                   className="text-xl mb-8"
@@ -232,7 +315,7 @@ const BlogPage: React.FC = () => {
                   animate={{ opacity: 1, y: 0 }}
                   transition={{ duration: 0.5, delay: 0.1 }}
                 >
-                  Insights, trends, and expert perspectives on technology and innovation
+                  Insights, trends, and expert perspectives on IT solutions and innovation
                 </motion.p>
               </div>
             </div>
