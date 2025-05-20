@@ -55,12 +55,7 @@ const Footer: React.FC = () => {
                   info@optrya.com
                 </a>
               </div>
-              <div className="flex items-center">
-                <Phone className="h-5 w-5 text-primary-400 mr-2 sm:mr-3" />
-                <a href="tel:+15555555555" className="text-sm sm:text-base text-gray-300 hover:text-white transition">
-                  +1 (555) 555-5555
-                </a>
-              </div>
+             
               <div className="flex items-start">
                 <MapPin className="h-5 w-5 text-primary-400 mr-2 sm:mr-3 mt-0.5" />
                 <span className="text-sm sm:text-base text-gray-300">
