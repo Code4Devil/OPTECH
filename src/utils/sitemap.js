@@ -3,7 +3,7 @@
  */
 
 // Base URL of your website
-const BASE_URL = 'https://yourdomain.com';
+const BASE_URL = 'https://optrya.in';
 
 // Main routes from your application
 const routes = [
@@ -23,10 +23,10 @@ const routes = [
  */
 export function generateSitemap() {
   const today = new Date().toISOString().split('T')[0];
-  
+
   let xml = '<?xml version="1.0" encoding="UTF-8"?>\n';
   xml += '<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n';
-  
+
   routes.forEach(route => {
     xml += '  <url>\n';
     xml += `    <loc>${BASE_URL}${route.path}</loc>\n`;
@@ -35,7 +35,7 @@ export function generateSitemap() {
     xml += `    <priority>${route.priority}</priority>\n`;
     xml += '  </url>\n';
   });
-  
+
   xml += '</urlset>';
   return xml;
 }
