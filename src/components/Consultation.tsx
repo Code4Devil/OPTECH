@@ -60,14 +60,19 @@ const Consultation: React.FC = () => {
             <p className="text-xl text-gray-300 mb-8">
               Let's discuss how our IT solutions can transform your business
             </p>
-            <motion.button
+            <motion.a
+              href="#booking-form"
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}
-              className="px-8 py-3 bg-white text-gray-900 rounded-full font-medium flex items-center justify-center mx-auto"
+              className="px-8 py-3 bg-white text-gray-900 rounded-full font-medium flex items-center justify-center mx-auto cursor-pointer"
+              onClick={(e) => {
+                e.preventDefault();
+                document.getElementById('booking-form')?.scrollIntoView({ behavior: 'smooth' });
+              }}
             >
               Book Now
               <ArrowRight className="w-5 h-5 ml-2" />
-            </motion.button>
+            </motion.a>
           </motion.div>
         </div>
       </section>
@@ -138,7 +143,7 @@ const Consultation: React.FC = () => {
       </section>
 
       {/* Booking Form */}
-      <section className="py-20 bg-white">
+      <section id="booking-form" className="py-20 bg-white">
         <div className="container mx-auto px-4">
           <div className="max-w-3xl mx-auto">
             <motion.div

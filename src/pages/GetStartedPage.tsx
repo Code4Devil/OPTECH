@@ -1,6 +1,7 @@
 import React from 'react';
 import { motion } from 'framer-motion';
 import { ArrowRight, CheckCircle, Shield, Clock, Users } from 'lucide-react';
+import { Link } from 'react-router-dom';
 
 const GetStartedPage: React.FC = () => {
   const steps = [
@@ -47,14 +48,16 @@ const GetStartedPage: React.FC = () => {
             <p className="text-xl text-gray-300 mb-8">
               Let's work together to bring your vision to life with our cutting-edge IT solutions
             </p>
-            <motion.button
-              whileHover={{ scale: 1.05 }}
-              whileTap={{ scale: 0.95 }}
-              className="px-8 py-3 bg-white text-gray-900 rounded-full font-medium flex items-center justify-center mx-auto"
-            >
-              Schedule Consultation
-              <ArrowRight className="ml-2 w-5 h-5" />
-            </motion.button>
+            <Link to="/consultation">
+              <motion.button
+                whileHover={{ scale: 1.05 }}
+                whileTap={{ scale: 0.95 }}
+                className="px-8 py-3 bg-white text-gray-900 rounded-full font-medium flex items-center justify-center mx-auto"
+              >
+                Schedule Consultation
+                <ArrowRight className="ml-2 w-5 h-5" />
+              </motion.button>
+            </Link>
           </motion.div>
         </div>
       </section>
@@ -142,9 +145,12 @@ const GetStartedPage: React.FC = () => {
               transition={{ duration: 0.5, delay: 0.3 }}
               className="mt-12 text-center"
             >
-              <button className="px-8 py-3 bg-primary-600 text-white rounded-full font-medium shadow-lg">
-                Get Started Now
-              </button>
+              <Link to="/consultation">
+                <button className="px-8 py-3 bg-primary-600 text-white rounded-full font-medium shadow-lg flex items-center justify-center mx-auto">
+                  Get Started Now
+                  <ArrowRight className="ml-2 w-5 h-5" />
+                </button>
+              </Link>
             </motion.div>
           </div>
         </div>
